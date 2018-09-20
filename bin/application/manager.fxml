@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Manager_controller">
+   <children>
+      <SplitPane dividerPositions="0.18341708542713567, 0.8919597989949749" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0">
+        <items>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ChoiceBox fx:id="ChoiceBox_item" layoutX="68.0" layoutY="8.0" prefWidth="150.0" />
+                  <ChoiceBox fx:id="ChoiceBox_competition" layoutX="68.0" layoutY="40.0" prefWidth="150.0" />
+                  <Label layoutX="14.0" layoutY="12.0" text="比赛项目：" />
+                  <Label layoutX="14.0" layoutY="44.0" text="比赛场次：" />
+                  <Label layoutX="273.0" layoutY="44.0" text="运动员：" />
+                  <Label layoutX="273.0" layoutY="12.0" text="比赛单位：" />
+                  <ChoiceBox fx:id="ChoiceBox_unit" layoutX="327.0" layoutY="8.0" prefWidth="150.0" />
+                  <ChoiceBox fx:id="ChoiceBox_athlete" layoutX="327.0" layoutY="40.0" prefWidth="150.0" />
+                  <Label layoutX="511.0" layoutY="12.0" text="世界纪录" />
+                  <Label fx:id="Label_record" layoutX="519.0" layoutY="44.0" text="Label" />
+               </children>
+            </AnchorPane>
+            <TabPane fx:id="TabPane1" prefHeight="266.0" prefWidth="598.0" tabClosingPolicy="UNAVAILABLE" />
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="133.0" prefWidth="598.0">
+               <children>
+                  <Button layoutX="535.0" layoutY="9.0" mnemonicParsing="false" onAction="#onButtonClick_exit" text="退出" />
+                  <Button layoutX="37.0" layoutY="9.0" mnemonicParsing="false" onAction="#onButtonClick_byCompetition" text="按场次查询" />
+                  <Button layoutX="140.0" layoutY="9.0" mnemonicParsing="false" onAction="#onButtonClick_byUnit" text="按单位查询" />
+                  <Button layoutX="242.0" layoutY="9.0" mnemonicParsing="false" onAction="#onButtonClick_byPerson" text="按个人查询" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

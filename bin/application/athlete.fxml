@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="415.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Athlete_controller">
+   <children>
+      <SplitPane dividerPositions="0.18592964824120603, 0.8919597989949749" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="415.0" prefWidth="600.0">
+        <items>
+            <AnchorPane prefHeight="56.0" prefWidth="598.0">
+               <children>
+                  <Label layoutX="165.0" layoutY="16.0" text="身高：" />
+                  <Label layoutX="165.0" layoutY="43.0" text="体重：" />
+                  <Label layoutX="318.0" layoutY="16.0" text="性别：" />
+                  <Label layoutX="318.0" layoutY="43.0" text="国籍：" />
+                  <Label layoutX="30.0" layoutY="43.0" text="姓名：" />
+                  <Label layoutX="30.0" layoutY="16.0" text="编号：" />
+                  <Label layoutX="448.0" layoutY="43.0" text="代表队：" />
+                  <Label layoutX="448.0" layoutY="16.0" text="年龄：" />
+                  <Label fx:id="Label_height" layoutX="211.0" layoutY="16.0" text="Label" />
+                  <Label fx:id="Label_weight" layoutX="211.0" layoutY="43.0" text="Label" />
+                  <Label fx:id="Label_name" layoutX="66.0" layoutY="43.0" text="Label" />
+                  <Label fx:id="Label_ID" layoutX="66.0" layoutY="16.0" text="Label" />
+                  <Label fx:id="Label_country" layoutX="369.0" layoutY="43.0" text="Label" />
+                  <Label fx:id="Label_sex" layoutX="369.0" layoutY="16.0" text="Label" />
+                  <Label fx:id="Label_age" layoutX="502.0" layoutY="16.0" text="Label" />
+                  <Label fx:id="Label_unit" layoutX="502.0" layoutY="43.0" text="Label" />
+               </children>
+            </AnchorPane>
+            <TabPane fx:id="TabPane1" prefHeight="266.0" prefWidth="598.0" tabClosingPolicy="UNAVAILABLE" />
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="133.0" prefWidth="598.0">
+               <children>
+                  <Button layoutX="343.0" layoutY="3.0" mnemonicParsing="false" onAction="#onButtonClick_exit" text="退出" />
+                  <Button layoutX="206.0" layoutY="3.0" mnemonicParsing="false" onAction="#onButtonClick_fresh" text="刷新" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

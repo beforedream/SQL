@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Login_controller">
+   <children>
+      <Pane fx:id="Pane_login" layoutX="-493.0" layoutY="-502.0" prefHeight="258.0" prefWidth="438.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="Label_login_name" alignment="CENTER" contentDisplay="CENTER" layoutX="90.0" layoutY="87.0" prefHeight="26.0" prefWidth="71.0" text="用户名：" />
+            <Label fx:id="Label_login_passwd" alignment="CENTER" layoutX="90.0" layoutY="126.0" prefHeight="26.0" prefWidth="71.0" text="密码：" />
+            <TextField fx:id="TextField_login_name" layoutX="161.0" layoutY="89.0" promptText="请输入用户名" text="ChinaAthlete1" />
+            <TextField fx:id="TextField_login_passwd" layoutX="161.0" layoutY="128.0" promptText="请输入密码" text="1" />
+            <Label fx:id="Label_login_title" alignment="CENTER" contentDisplay="CENTER" layoutX="108.0" layoutY="39.0" prefHeight="26.0" prefWidth="225.0" scaleX="2.0" scaleY="2.0" scaleZ="2.0" text="登录界面" />
+            <Button fx:id="Button_login" alignment="CENTER" layoutX="162.0" layoutY="199.0" mnemonicParsing="false" onAction="#onButtonClick_login" text="登录" />
+            <Button fx:id="Button_cancel" alignment="CENTER" layoutX="261.0" layoutY="199.0" mnemonicParsing="false" onAction="#onBUttonClick_cancel" text="退出" />
+            <CheckBox fx:id="CheckBox_login_athlete" layoutX="91.0" layoutY="167.0" mnemonicParsing="false" onAction="#onCheckBoxClick_athlete" selected="true" text="运动员登录" />
+            <CheckBox fx:id="CheckBox_login_referee" layoutX="186.0" layoutY="167.0" mnemonicParsing="false" onAction="#onCheckBoxClick_referee" text="裁判登录" />
+            <CheckBox fx:id="CheckBox_login_manager" layoutX="274.0" layoutY="167.0" mnemonicParsing="false" onAction="#onCheckBoxClick_manager" text="管理员登录" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Pane>
+   </children>
+</AnchorPane>

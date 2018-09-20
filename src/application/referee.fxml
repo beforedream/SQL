@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Referee_controller">
+   <children>
+      <SplitPane dividerPositions="0.18341708542713567, 0.8919597989949749" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0">
+        <items>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="38.0" layoutY="28.0" text="编号：" />
+                  <Label fx:id="Label_ID" layoutX="87.0" layoutY="28.0" text="Label" />
+                  <Label fx:id="Label_name" layoutX="296.0" layoutY="28.0" text="Label" />
+                  <Label layoutX="247.0" layoutY="28.0" text="姓名：" />
+                  <Label layoutX="460.0" layoutY="28.0" text="国籍：" />
+                  <Label fx:id="Label_country" layoutX="509.0" layoutY="28.0" text="Label" />
+               </children>
+            </AnchorPane>
+            <TabPane fx:id="TabPane1" prefHeight="266.0" prefWidth="598.0" tabClosingPolicy="UNAVAILABLE" />
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="133.0" prefWidth="598.0">
+               <children>
+                  <Button fx:id="Button_exit" layoutX="481.0" layoutY="9.0" mnemonicParsing="false" onAction="#onButtonClick_exit" text="退出" />
+                  <Button layoutX="279.0" layoutY="9.0" mnemonicParsing="false" onAction="#onButtonClick_confirm" text="确定" />
+                  <Button layoutX="72.0" layoutY="9.0" mnemonicParsing="false" onAction="#onButtonClick_fresh" text="刷新" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
